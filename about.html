@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body id="wholepage">
+ <div class="header">
+  <div class="text">Your food your way</div>
+</div>
+<div class="navbar" id="navbar">
+  <a href="home.html">Home</a>
+  <a href="about.html">About us</a>
+  <a href="contact.html">Contact us</a>
+  <a href="resturant.html">Our Resturants</a>
+  <a href="online.html" class="right">Sign in now <img class="shopimg" src="images/shop.png"></a> 
+</div> 
+<div class="container2">
+    <div class="aboutarticle">
+                <h1>Our participation </h1>
+                <p style="color:palegoldenrod">We participate in different events from children rescue organization by rasing fund from 3% of our profit<br>
+                We win people with unique techniue, quality and on time delivery.</p>
+                <div class="w3-row-padding w3-section w3-stretch">
+                    <div class="w3-col s4 zoom">
+                    <img src="images/c1.jpg" style="width:80%; height: 80%;">
+
+                    </div>
+                    <div class="w3-col s4 zoom">
+                    <img src="images/c2.jpg" style="width:80%; height: 80%">
+                    </div>
+                    <div class="w3-col s4 zoom">
+                    <img src="images/c3.jpg" style="width:80%; height: 80%">
+                    </div>
+                </div>
+                <div class="w3-row-padding w3-section w3-stretch">
+                    <div class="w3-col s4 zoom">
+                    <img src="images/c4.jpg" style="width:80%; height: 70%;">
+                    </div>
+                    <div class="w3-col s4 zoom">
+                    <img src="images/c5.jpg" style="width:80%; height: 80%">
+                    </div>
+                    <div class="w3-col s4 zoom">
+                    <img src="images/c6.png" style="width:80%; height: 80%">
+                    </div>
+                </div>
+    </div>
+    <div class="aboutaside"><h2><b>Our values 
+      <div class="quote2">
+        <div class="w3-container">
+            <i class="fa fa-spinner w3-spin" style="font-size:34px;"></i>
+        </div>
+      </div></h2></b>
+        <img src="images/chef.jpg" width="250" height="150">
+            <p style="color: white;">We Work together to exclude hunger.</p>
+    </div>
+    <div class="quote">
+            "Pull up a chair. Take a taste. Come join us. Life is so endlessly delicious."
+            <br><p style="text-align: right;">-Ruth Reichl</p>
+    </div>
+</div>
+
+<div class="footer">
+  <table align="center">
+    <tr >
+      <th>Shop:</th>
+      <th>Opening hours:</th>
+      <th>Address:</th>
+      <th>Any suggestions?</th>
+    </tr>
+    <tr >
+      <th><a href="home.html">Home</a></th>
+      <th>......................</th>
+      <th>Namuna Basti</th>
+      <th>Email us-<input type="email" name="mail"></th>
+    </tr>
+    <tr>
+      <th><a href="about.html">About</a></th>
+      <th>24hrs Delivery</th>
+      <th>Kathmandu,Provience 3</th>
+      <th align="center">
+        <input type="submit" value="Hit us up"></th>
+    </tr>
+    <tr>
+      <th><a href="#">Shipping/pick up</a></th>
+      <th>......................</th>
+      <th>Tel:016213575</th>
+    </tr>
+
+    <tr>
+      <th><a href="#">Store Policy</a></th>
+    </tr>
+    <tr>
+      <th><a href="contact.html">Contact </a></th>
+    </tr>
+  </table>
+    ----@2024 by FOODWAY----
+    <a href="ekata.ghimire333@gmail.com" TARGET="_blank"><br>ekata.ghimire333@gmail.com</a>
+    <div align="center">
+    <a href="https://www.facebook.com/FoodNetwork/"><img src= "images/facebook.png" height= "30" width = "30"></a>
+      <a href="https://www.youtube.com/watch?v=ZKLSqmgyeNU"><img src= "images/youtube.png" height= "30" width = "30"></a>
+    </div>
+    <body onload="clockStart()">
+  <div id="clock">
+    <span id="hour">hh</span>:<span id="min">mm</span>:<span id="sec">ss</span>   
+  </div>
+  <script>
+    var timerId; //current timer of started
+    function clockStart(){
+      if (timerId)
+        return;
+      timerId = setInterval(update,1000);
+      update();
+    }
+    function update(){
+      var date= new Date();
+      var hours= date.getHours();
+      if (hours<10)
+        hours='0'+hours;
+      document.getElementById("hour").innerHTML=hours;
+
+      var minutes= date.getMinutes();
+      if (minutes<10)
+        minutes='0'+minutes;
+      document.getElementById("min").innerHTML=minutes;
+
+      var seconds= date.getSeconds();
+      if (seconds<10)
+        seconds='0'+seconds;
+      document.getElementById("sec").innerHTML=seconds;
+    }
+</script>
+
+</div>
+  
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://kit.fontawesome.com/de1c10e5c7.js" crossorigin="anonymous"></script>
+<style type="text/css">
+  
+  .container4{
+  width: 400px;
+  position: relative;
+  padding:60px 25px 25px;
+  background-image: url(images/gray.jpg);
+  border-radius: 25px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  left: 500px;
+
+}
+
+.input-group{
+  width: 100;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.icon-wrap{
+  width: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid black;
+}
+
+.input{
+  border: 0;
+  width: 350px;
+  padding:0 5px;
+  outline: none;
+  border-radius:0 5px 5px 0;
+}
+
+.input:focus{
+  border: 2px solid #006eff;
+}
+
+.button4{
+  width: 150px;
+  height: 35px;
+  border: 0;
+  border-radius: 25px;
+  display: inline-block;
+  text-align: center;
+  align-self: center;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.button4:hover{
+  background-color: lightgoldenrodyellow;
+  color: white;
+}
+
+.logo{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #5F5F5F;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  position: absolute;
+  top: -13%;
+  left: 50%;
+  transform:translateX(-50%);
+  box-shadow: 0px 1px 5px rgb(75, 75, 75);
+}
+
+.error{
+  position: absolute;
+  bottom: -40px;
+  color: red;
+  font-size: 14px;
+  width: 100%;
+  text-align: left;
+  visibility: hidden;
+}
+
+.display{
+  visibility: visible;
+}
+</style>
+
+
+</head>
+<body id="wholepage">
+ <div class="header">
+  <div class="text">Your food your way</div>
+</div>
+<div class="navbar" id="navbar">
+  <a href="home.html">Home</a>
+  <a href="about.html">About us</a>
+  <a href="contact.html">Contact us</a>
+  <a href="resturant.html">Our Resturants</a>
+  <a href="online.html" class="right">Sign in now <img class="shopimg" src="images/shop.png"></a> 
+</div>
+
+
+  <div  class="container4">
+    <div class="logo">(:-) </div>
+    <div class="input-group">
+      <span class="icon-wrap">
+        <i class="fas fa-user"></i>
+      </span>
+      <input type="text" class="input user-id" placeholder="User ID" />
+      <p class="error user-error">Invalid User ID</p>     
+    </div>
+
+    <div class="input-group">
+      <span class="icon-wrap">
+        <i class="fas fa-mobile-alt"></i>
+      </span>
+      <input type="text" class="input mobile" placeholder="Mobile" />
+      <p class="error mobile-error">Invalid Mobile Number</p>     
+    </div>
+
+    <div class="input-group">
+      <span class="icon-wrap">
+        <i class="fas fa-envelope"></i>
+      </span>
+      <input type="email" class="input email" placeholder="Email" />  
+      <p class="error email-error">Invalid Email address</p>    
+    </div>
+
+    <div class="input-group">
+      <span class="icon-wrap">
+        <i class="fas fa-lock"></i>
+      </span>
+      <input type="password" class="input password" placeholder="Password" /> 
+      <p class="error password-error">Password mismatch</p>   
+    </div>
+
+    <div class="input-group">
+      <span class="icon-wrap">
+        <i class="fas fa-lock"></i>
+      </span>
+      <input type="password" class="input cpassword" placeholder="Confirm Password" />
+      <p class="error cpassword-error">Password mismatch</p>      
+    </div>
+
+    <button class="button4">Sign Up</button>
+  </div>
+  <script type="text/javascript">
+    const button4 = document.getElementsByClassName("button4")[0];
+    let isSubmit = true;
+
+    const submitForm = () =>{
+      const userId= document.getElementsByClassName("user-id")[0];
+      const mobile= document.getElementsByClassName("mobile")[0];
+      const email= document.getElementsByClassName("email")[0];
+      const password= document.getElementsByClassName("password")[0];
+      const cpassword= document.getElementsByClassName("cpassword")[0];
+
+      if(userId.value == ''){
+        document.getElementsByClassName("user-error")[0].classList.add("display");
+        isSubmit = false;
+      }else{
+        document.getElementsByClassName("user-error")[0].classList.remove("display");
+        isSubmit = true;
+      }
+
+      if(mobile.value == '' || mobile.value.length !=10){
+        document.getElementsByClassName("mobile-error")[0].classList.add("display");
+        isSubmit = false;
+      }else{
+        document.getElementsByClassName("mobile-error")[0].classList.remove("display");
+        isSubmit = true;
+      }
+      if(email.value == ''){
+        document.getElementsByClassName("email-error")[0].classList.add("display");
+        isSubmit = false;
+      }else{
+        document.getElementsByClassName("email-error")[0].classList.remove("display");
+        isSubmit = true;
+      }
+      if(password.value == '' || cpassword.value !== password.value){
+        document.getElementsByClassName("password-error")[0].classList.add("display");
+        isSubmit = false;
+      }else{
+        document.getElementsByClassName("password-error")[0].classList.remove("display");
+        isSubmit = true;
+      }
+      if(cpassword.value == '' || cpassword.value !== password.value){
+        document.getElementsByClassName("cpassword-error")[0].classList.add("display");
+        isSubmit = false;
+      }else{
+        document.getElementsByClassName("cpassword-error")[0].classList.remove("display");
+        isSubmit = true;
+      }
+
+      
+      if (isSubmit){
+        alert("You are now eligible to order the food!! Order from your favourite Resturant");
+      }
+    }
+    button4.addEventListener("click",submitForm);
+  </script>
+
+
+<div class="footer">
+  <table align="center">
+    <tr >
+      <th>Shop:</th>
+      <th>Opening hours:</th>
+      <th>Address:</th>
+      <th>Any suggestions?</th>
+    </tr>
+    <tr >
+      <th><a href="index.html">Home</a></th>
+      <th>......................</th>
+      <th>Namuna Basti</th>
+      <th>Email us-<input type="email" name="mail"></th>
+    </tr>
+    <tr>
+      <th><a href="#">FAQ</a></th>
+      <th>24hrs Delivery</th>
+      <th>Kathmandu,Provience 3</th>
+      <th align="center">
+        <input type="submit" value="Hit us up"></th>
+    </tr>
+    <tr>
+      <th><a href="#">Shipping/pick up</a></th>
+      <th>......................</th>
+      <th>Tel:016213575</th>
+    </tr>
+
+    <tr>
+      <th><a href="#">Store Policy</a></th>
+    </tr>
+    <tr>
+      <th><a href="Contact.html">Contact </a></th>
+    </tr>
+  </table>
+    ----@2024 by FOODWAY----
+    <a href="ekata.ghimire333@gmail.com" TARGET="_blank"><br>ekata.ghimire333@gmail.com</a>
+    <div align="center">
+    <a href="https://www.facebook.com/FoodNetwork/"><img src= "images/facebook.png" height= "30" width = "30"></a>
+      <a href="https://www.youtube.com/watch?v=ZKLSqmgyeNU"><img src= "images/youtube.png" height= "30" width = "30"></a>
+    </div>
+    <body onload="clockStart()">
+  <div id="clock">
+    <span id="hour">hh</span>:<span id="min">mm</span>:<span id="sec">ss</span>   
+  </div>
+  <script>
+    var timerId; //current timer of started
+    function clockStart(){
+      if (timerId)
+        return;
+      timerId = setInterval(update,1000);
+      update();
+    }
+    function update(){
+      var date= new Date();
+      var hours= date.getHours();
+      if (hours<10)
+        hours='0'+hours;
+      document.getElementById("hour").innerHTML=hours;
+
+      var minutes= date.getMinutes();
+      if (minutes<10)
+        minutes='0'+minutes;
+      document.getElementById("min").innerHTML=minutes;
+
+      var seconds= date.getSeconds();
+      if (seconds<10)
+        seconds='0'+seconds;
+      document.getElementById("sec").innerHTML=seconds;
+    }
+</script>
+
+</div>
+  
+</body>
+</html>

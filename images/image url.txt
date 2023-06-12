@@ -1,0 +1,20 @@
+i1: https://foodmandu.com//Images/Vendor/449/OriginalSize/Pizza_090920101915.hut.web.listing.jpeg
+i2(jpg):https://alazzamgroup.com/wp-content/uploads/2016/11/restaurant-food-img6-1.jpg
+
+
+
+
+
+
+resturant 
+
+
+rest1: https://www.booking.com/hotel/np/utse.en-gb.html
+rest2:https://www.tripadvisor.com/Restaurant_Review-g315764-d3522818-Reviews-El_Mediterraneo-Patan_Lalitpur_Kathmandu_Valley_Bagmati_Zone_Central_Region.html
+rest3:https://www.tripadvisor.com/Restaurant_Review-g293890-d1155271-Reviews-or10-Krishnarpan_Restaurant-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Regio.html
+rest4:https://www.bhojangriha.com/
+rest5:https://lesherpa.com.np/
+rest6:https://foodmandu.com/Restaurant/Details/115
+rest7:https://www.tripadvisor.com/Restaurant_Review-g315764-d2196882-Reviews-Cafe_Soma-Patan_Lalitpur_Kathmandu_Valley_Bagmati_Zone_Central_Region.html
+rest8:https://www.tripadvisor.com/Restaurant_Review-g293891-d2025939-Reviews-Chilly_Bar_Restaurant-Pokhara_Gandaki_Zone_Western_Region.html
+rest9:https://www.tripadvisor.com/Restaurant_Review-g293891-d2025939-Reviews-Chilly_Bar_Restaurant-Pokhara_Gandaki_Zone_Western_Region.html

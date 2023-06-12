@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<body id="wholepage">
+ <div class="header">
+  <div class="text">Your food your way</div>
+</div>
+<div class="navbar" id="navbar">
+  <a href="home.html">Home</a>
+  <a href="about.html">About us</a>
+  <a href="contact.html">Contact us</a>
+  <a href="resturant.html">Our Resturants</a>
+  <a href="online.html" class="right">Sign in now <img class="shopimg" src="images/shop.png"></a> 
+</div>
+
+
+<div class="background">
+  <div class="container3">
+    <div class="screen">
+      <div class="screen-header">
+        <div class="screen-header-left">
+          <div class="screen-header-button close"></div>
+          <div class="screen-header-button maximize"></div>
+          <div class="screen-header-button minimize"></div>
+        </div>
+        <div class="screen-header-right">
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+        </div>
+      </div>
+      <div class="screen-body">
+        <div class="screen-body-item left">
+          <div class="app-title">
+            <span>CONTACT</span>
+            <span>US</span>
+          </div>
+          <div class="app-contact">CONTACT INFO : +977-9844678923</div>
+        </div>
+        <div class="screen-body-item">
+          <div class="app-form">
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="NAME" value="Name">
+            </div>
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="EMAIL">
+            </div>
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="CONTACT NO">
+            </div>
+            <div class="app-form-group message">
+              <input class="app-form-control" placeholder="MESSAGE">
+            </div>
+            <div class="app-form-group buttons">
+              <button class="app-form-button">CANCEL</button>
+              <button class="app-form-button">SEND</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="box">
+<div class="map-wrapper">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7065.7213528983675!2d85.3182661251446!3d27.690700681268655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19b0f6aafa13%3A0x778967dbd03da6e0!2sThapathali%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1624697837974!5m2!1sen!2snp" width="460" height="380" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+</div>
+
+<div class="box2">
+  <h1 class="ml5">
+  <span class="text-wrapper">
+    <span class="line line1"></span>
+    <span class="letters letters-left">24hrs</span>
+    <!-- <span class="letters ampersand">&amp;</span> -->
+    <span class="letters letters-right">Delivery</span>
+    <span class="line line2"></span>
+  </span>
+</h1>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> 
+</div>
+<script type="text/javascript">
+  anime.timeline({loop: true})
+  .add({
+    targets: '.ml5 .line',
+    opacity: [0.5,1],
+    scaleX: [0, 1],
+    easing: "easeInOutExpo",
+    duration: 700
+  }).add({
+    targets: '.ml5 .line',
+    duration: 600,
+    easing: "easeOutExpo",
+    translateY: (el, i) => (-0.625 + 0.625*2*i) + "em"
+  }).add({
+    targets: '.ml5 .ampersand',
+    opacity: [0,1],
+    scaleY: [0.5, 1],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=600'
+  }).add({
+    targets: '.ml5 .letters-left',
+    opacity: [0,1],
+    translateX: ["0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=300'
+  }).add({
+    targets: '.ml5 .letters-right',
+    opacity: [0,1],
+    translateX: ["-0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=600'
+  }).add({
+    targets: '.ml5',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
+
+
+<div class="footer">
+  <table align="center">
+    <tr >
+      <th>Shop:</th>
+      <th>Opening hours:</th>
+      <th>Address:</th>
+      <th>Any suggestions?</th>
+    </tr>
+    <tr >
+      <th><a href="home.html">Home</a></th>
+      <th>......................</th>
+      <th>Namuna Basti</th>
+      <th>Email us-<input type="email" name="mail"></th>
+    </tr>
+    <tr>
+      <th><a href="about.html">About</a></th>
+      <th>24hrs Delivery</th>
+      <th>Kathmandu,Provience 3</th>
+      <th align="center">
+        <input type="submit" value="Hit us up"></th>
+    </tr>
+    <tr>
+      <th><a href="#">Shipping/pick up</a></th>
+      <th>......................</th>
+      <th>Tel:016213575</th>
+    </tr>
+
+    <tr>
+      <th><a href="#">Store Policy</a></th>
+    </tr>
+    <tr>
+      <th><a href="contact.html">Contact </a></th>
+    </tr>
+  </table>
+    ----@2024 by FOODWAY----
+    <a href="ekata.ghimire333@gmail.com" TARGET="_blank"><br>ekata.ghimire333@gmail.com</a>
+    <div align="center">
+    <a href="https://www.facebook.com/FoodNetwork/"><img src= "images/facebook.png" height= "30" width = "30"></a>
+      <a href="https://www.youtube.com/watch?v=ZKLSqmgyeNU"><img src= "images/youtube.png" height= "30" width = "30"></a>
+    </div>
+    <body onload="clockStart()">
+  <div id="clock">
+    <span id="hour">hh</span>:<span id="min">mm</span>:<span id="sec">ss</span>   
+  </div>
+  <script>
+    var timerId; //current timer of started
+    function clockStart(){
+      if (timerId)
+        return;
+      timerId = setInterval(update,1000);
+      update();
+    }
+    function update(){
+      var date= new Date();
+      var hours= date.getHours();
+      if (hours<10)
+        hours='0'+hours;
+      document.getElementById("hour").innerHTML=hours;
+
+      var minutes= date.getMinutes();
+      if (minutes<10)
+        minutes='0'+minutes;
+      document.getElementById("min").innerHTML=minutes;
+
+      var seconds= date.getSeconds();
+      if (seconds<10)
+        seconds='0'+seconds;
+      document.getElementById("sec").innerHTML=seconds;
+    }
+</script>
+
+</div>
+  
+</body>
+</html>

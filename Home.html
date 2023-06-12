@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+<script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+<meta name="robots" content="noindex,follow" />
+
+</head>
+<body id="wholepage">
+ <div class="header">
+  <div class="text">Your food your way</div>
+</div>
+<div class="navbar" id="navbar">
+  <a href="home.html">Home</a>
+  <a href="about.html">About us</a>
+  <a href="contact.html">Contact us</a>
+  <a href="resturant.html">Our Resturants</a>
+  <a href="online.html" class="right">Sign in now <img class="shopimg" src="images/shop.png"></a> 
+</div>
+<div class="row">
+  <div class="side">
+    <p align="center"><img src="images/i3.jpg" class="r2"><br><br> </p>
+    <p align="center" >We take order of your choice! :-)</p>
+    <br><br>
+    <div align="center">
+    <img align="center" src="images/i4.jpg" height="100" width="400"></div>  
+    <div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="images/image1.jpg" style="width:100%; height:300px; position: relative; top:90px">
+  <img class="mySlides" src="images/image2.jpg" style="width:100%; height:300px;position: relative;top:90px">
+  <img class="mySlides" src="images/image3.jpg" style="width:100%; height:400px;position: relative;top:90px">
+  <img class="mySlides" src="images/image6.jpg" style="width:100%; height:300px;position: relative;top:90px">
+  <img class="mySlides" src="images/image5.jpg" style="width:100%; height:300px;position: relative;top:90px">
+  </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</div>
+<div class="side2">   
+<section>
+  <h2>Add to cart <img src="images/cart.png" height="40" width="40"></h2>
+      <article>
+        <h2>Burger</h2>
+        <p><img src="images/image1.jpg" height="100" width="250"></p>
+      <div class="description">
+          <span style="color: white;">Burger</span>
+          <span style="color: white;"><br>Large size</span>
+        </div>
+        <div class="quantity">
+          <button class="plus-btn" type="button" name="button">
+            <img src="images/plus.png" height="20" width="20" />
+          </button>
+          <input type="text" name="name" value="1">
+          <button class="minus-btn" type="button" name="button">
+            <img src="images/minus.svg"/>
+          </button>
+        </div>
+        <div class="total-price"> Price: $5</div>
+      </article>
+
+      <article>
+        <h2>Pizza</h2>
+
+      <p><img src="images/image2.jpg" height="100" width="250"></p>
+      <div class="description">
+          <span style="color: white;">Mushroom pizza with extra cheese</span>
+          <span style="color: white;"><br>Large size</span>
+        </div>
+        <div class="quantity">
+          <button class="plus-btn" type="button" name="button">
+            <img src="images/plus.png" height="20" width="20" />
+          </button>
+          <input type="text" name="name" value="1">
+          <button class="minus-btn" type="button" name="button">
+            <img src="images/minus.svg"/>
+          </button>
+        </div>
+        <div class="total-price"> Price: $15</div>
+      </article>
+
+      <article>
+        <h2>Butteer Cream Waffle</h2>
+
+      <p><img src="images/image3.jpg" height="100" width="250"></p>
+      <div class="description">
+          <span style="color: white;">Waffle</span>
+          <span style="color: white;">Butter Cream</span>
+        </div>
+        <div class="quantity">
+          <button class="plus-btn" type="button" name="button">
+            <img src="images/plus.png" height="20" width="20" />
+          </button>
+          <input type="text" name="name" value="1">
+          <button class="minus-btn" type="button" name="button">
+            <img src="images/minus.svg"/>
+          </button>
+        </div>
+        <div class="total-price"> Price: $3</div>
+      </article>
+  </section>
+</div>
+<div class="main">   
+<section>
+  <h2 style="color:yellow; ">Enjoy the food at best deal</h2>
+      <article>
+        <h2>Cheesy Spicy Pasta</h2>
+        <p><img src="images/image7.jpg" height="100" width="250"></p>
+      <div class="description">
+          <span style="color: white;">Pasta</span>
+          <span style="color: white;"><br>Spicy  Cheese</span>
+        </div>
+        <div class="quantity">
+          <button class="plus-btn" type="button" name="button">
+            <img src="images/plus.png" height="20" width="20" />
+          </button>
+          <input type="text" name="name" value="1">
+          <button class="minus-btn" type="button" name="button">
+            <img src="images/minus.svg"/>
+          </button>
+        </div>
+        <div class="total-price"> Price: $10</div>
+      </article>
+
+      <article>
+        <h2>Straberry Pancake</h2>
+        <p><img src="images/image5.jpg" height="100" width="250"></p>
+      <div class="description">
+          <span style="color: white;">Pancake</span>
+          <span style="color: white;">Straberry Cream</span>
+        </div>
+        <div class="quantity">
+          <button class="plus-btn" type="button" name="button">
+            <img src="images/plus.png" height="20" width="20" />
+          </button>
+          <input type="text" name="name" value="1">
+          <button class="minus-btn" type="button" name="button">
+            <img src="images/minus.svg"/>
+          </button>
+        </div>
+        <div class="total-price"> Price: $10</div>
+      </article>
+
+      <article>
+        <h2>Saussage</h2>
+
+        <p><img src="images/image6.jpg" height="100" width="250"></p>
+      <div class="description">
+          <span style="color: white;">Chicken Saussage</span>
+          <span style="color: white;">Spicy</span>
+        </div>
+        <div class="quantity">
+          <button class="plus-btn" type="button" name="button">
+            <img src="images/plus.png" height="20" width="20" />
+          </button>
+          <input type="text" name="name" value="1">
+          <button class="minus-btn" type="button" name="button">
+            <img src="images/minus.svg"/>
+          </button>
+        </div>
+        <div class="total-price"> Price: $2</div>
+      </article>
+  </section>
+      <script type="text/javascript">
+      $('.minus-btn').on('click', function(e) {
+        e.preventDefault();
+        var $this = $(this);
+        var $input = $this.closest('div').find('input');
+        var value = parseInt($input.val());
+
+        if (value > 1) {
+          value = value - 1;
+        } else {
+          value = 0;
+        }
+
+        $input.val(value);
+
+      });
+
+      $('.plus-btn').on('click', function(e) {
+        e.preventDefault();
+        var $this = $(this);
+        var $input = $this.closest('div').find('input');
+        var value = parseInt($input.val());
+
+        if (value < 100) {
+          value = value + 1;
+        } else {
+          value =100;
+        }
+
+        $input.val(value);
+      });
+
+      $('.like-btn').on('click', function() {
+        $(this).toggleClass('is-active');
+      });
+    </script>
+</div>
+</div>
+
+<div class="footer">
+    <table align="center">
+    <tr >
+      <th>Shop:</th>
+      <th>Opening hours:</th>
+      <th>Address:</th>
+      <th>Any suggestions?</th>
+    </tr>
+    <tr >
+      <th><a href="home.html">Home</a></th>
+      <th>......................</th>
+      <th>Namuna Basti</th>
+      <th>Email us-<input type="email" name="mail"></th>
+    </tr>
+    <tr>
+      <th><a href="about.html">About</a></th>
+      <th>24hrs Delivery</th>
+      <th>Kathmandu,Provience 3</th>
+      <th align="center">
+        <input type="submit" value="Hit us up"></th>
+    </tr>
+    <tr>
+      <th><a href="#">Shipping/pick up</a></th>
+      <th>......................</th>
+      <th>Tel:016213575</th>
+    </tr>
+
+    <tr>
+      <th><a href="#">Store Policy</a></th>
+    </tr>
+    <tr>
+      <th><a href="contact.html">Contact </a></th>
+    </tr>
+  </table>
+    ----@2024 by FOODWAY----
+    <a href="ekata.ghimire333@gmail.com" TARGET="_blank"><br>ekata.ghimire333@gmail.com</a>
+    <div align="center">
+    <a href="https://www.facebook.com/FoodNetwork/"><img src= "images/facebook.png" height= "30" width = "30"></a>
+      <a href="https://www.youtube.com/watch?v=ZKLSqmgyeNU"><img src= "images/youtube.png" height= "30" width = "30"></a>
+    </div>
+    <body onload="clockStart()">
+  <div id="clock">
+    <span id="hour">hh</span>:<span id="min">mm</span>:<span id="sec">ss</span>   
+  </div>
+  <script>
+    var timerId; //current timer of started
+    function clockStart(){
+      if (timerId)
+        return;
+      timerId = setInterval(update,1000);
+      update();
+    }
+    function update(){
+      var date= new Date();
+      var hours= date.getHours();
+      if (hours<10)
+        hours='0'+hours;
+      document.getElementById("hour").innerHTML=hours;
+
+      var minutes= date.getMinutes();
+      if (minutes<10)
+        minutes='0'+minutes;
+      document.getElementById("min").innerHTML=minutes;
+
+      var seconds= date.getSeconds();
+      if (seconds<10)
+        seconds='0'+seconds;
+      document.getElementById("sec").innerHTML=seconds;
+    }
+</script>
+
+</div>
+  
+</body>
+</html>
